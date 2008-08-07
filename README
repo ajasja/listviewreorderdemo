@@ -1,0 +1,8 @@
+This is a demo of the possible ways for letting a user reorder a list view.
+
+There are three possible ways:
+Drag & Drop (Multiple items can be selected using [Ctrl]+[left click]).
+Clicking Buttons (Up/Down) 
+Shortcuts ([Ctrl]+[Up arrow]/ [Ctrl]+[Down arrow])
+
+Items can be renamed either by pressing [F2] or by double-clicking.
