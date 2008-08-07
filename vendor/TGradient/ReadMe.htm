@@ -1,0 +1,404 @@
+<html>
+<head>
+<title>ReadMe</title>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+</head>
+<body BGCOLOR="#FFFFFF" TEXT="#000000">
+<table WIDTH="100%" BORDER="0" CELLSPACING="5" CELLPADDING="5" BGCOLOR="#660000">
+  <tr> 
+    <td> 
+      <div ALIGN="CENTER"><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="6" COLOR="#FFFFFF"><b>TGradient 
+        v2.61</b></font></div>
+    </td>
+  </tr>
+</table>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Copyright &copy; 
+  <a HREF="mailto:kambiz@delphiarea.com">Kambiz R. Khojasteh</a>. All rights reserved.<br>
+  Get future component updates from <a HREF="http://www.delphiarea.com">http://www.delphiarea.com</a>.<br>
+</font></p>
+<table BORDER="1" CELLSPACING="2" CELLPADDING="5" BORDERCOLOR="#FFFFFF" ALIGN="LEFT">
+  <tr BGCOLOR="#333333" ALIGN="CENTER" VALIGN="MIDDLE"> 
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 
+      3</font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 
+      4</font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 
+      5</font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 
+      6</font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 
+      7 </font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 2005 </font></b></td>
+    <td NOWRAP><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2" COLOR="#FFFFFF">Delphi 2006</font></b></td>
+  </tr>
+</table>
+<p><br>
+  <br>
+</p>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="4"><b><a NAME="DESCRIPTION"></a><br>
+  DESCRIPTION</b></font></p>
+<blockquote> 
+  <p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">TGradient is 
+    an extremely fast gradient fill control with a large set of styles. As built-in, 
+    TGradient can draw gradient in 24 styles and provides an easily method to 
+    define custom styles. In addition, this control can shift and/or rotate the 
+    gradient colors, which could be used for creating animated gradients. </font></p>
+</blockquote>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b><a NAME="PROPERTIES"></a><br>
+  </b></font><font FACE="Verdana, Arial, Helvetica, sans-serif"><b> <font SIZE="4">PROPERTIES</font></b></font></p>
+<ul>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>BorderColor: TColor <br>
+    </b>Determines the color of  the control's border.<br>
+    <b> </b><br>
+  </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>BorderWidth: TBorderWidth <br>
+    </b>Specifies the width of the control&rsquo;s border.<br>
+    <b> </b><br>
+  </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>ColorBegin: 
+    TColor<br>
+    </b>Determines the initial color of the gradient.<br>
+    <b> </b><br>
+  </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>ColorEnd: 
+    TColor<br>
+    </b>Determines the final color of the gradient.<br>
+    <b> </b><br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>Reverse: 
+    Boolean<br>
+    </b>If set to true, logically reverses the value of <i>ColorBegin</i> and 
+    <i>ColorEnd</i> properties.<br>
+    <b> </b> <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>Rotation: 
+    TGradientRotation<br>
+    TGradientRotation = -100..100<br>
+    </b>Determines the amount of rotation (in percent) of the gradient colors. 
+    When value of this property is positive, direction of rotation is from <i>ColorBegin</i> 
+    toward <i>ColorEnd</i>, and for negative values vice versa.<br>
+    <br>
+    </font></li>
+  <li><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Shift: TGradientShift<br>
+    TGradientShift = -100..100<br>
+    </font></b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Determines 
+    the amount of shift (in percent) of the gradient colors. For positive values<i> 
+    ColorBegin</i> shifts toward <i>ColorEnd</i>, and for negative values vice 
+    versa.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>Style: TGradientStyle<br>
+    TGradientStyle = (gsCustom, gsRadialC, gsRadialT, gsRadialB, gsRadialL, gsRadialR, 
+    gsRadialTL, gsRadialTR, gsRadialBL, gsRadialBR, gsLinearH, gsLinearV, gsReflectedH, 
+    gsReflectedV, gsDiagonalLF, gsDiagonalLB, gsDiagonalRF, gsDiagonalRB, gsArrowL, 
+    gsArrowR, gsArrowU, gsArrowD, gsDiamond, gsButterfly)<br>
+    </b> Determines how the control fills the client area.<br>
+    <br>
+    </font> 
+    <table WIDTH="90%" BORDER="0" CELLSPACING="5" CELLPADDING="0" ALIGN="CENTER">
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsCustom</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">When <i>style</i> 
+          property is set to this value, the control firs <i>OnCustom</i> to get 
+          the gradient pattern. </font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialC</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Central</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialT</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Top</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialB</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> Radial 
+          - Bottom</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialL</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Left</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialR</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Right</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialTL</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"> Radial 
+          - Top Left Corner</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialTR</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Top Right Corner</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialBL</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Bottom Left Corner</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialBR</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial 
+          - Bottom Right Corner</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsLinearH</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Linear 
+          - Horizontal</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsLinearV</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Linear 
+          - Vertical</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsReflectedH</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Reflected 
+          - Horizontal</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsReflectedV</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Reflected 
+          - Vertical</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsDiagonalLF</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Diagonal 
+          - Linear - Forward</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsDiagonalLB</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Diagonal 
+          - Linear - Backward</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsDiagonalRF</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Diagonal 
+          - Reflected - Forward</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsDiagonalRB</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Diagonal 
+          - Reflected - Backward</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsArrowL</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Arrow 
+          - Left</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsArrowR</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Arrow 
+          - Right</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsArrowU</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Arrow 
+          - U</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsArrowD</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Arrow 
+          - Down</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsDiamond</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Diamond</font></td>
+      </tr>
+      <tr> 
+        <td WIDTH="15%" VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsButterfly</font></b></td>
+        <td WIDTH="20">&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Butterfly</font></td>
+      </tr>
+      <tr>
+        <td VALIGN="TOP"><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">gsRadialRect</font></b></td>
+        <td>&nbsp;</td>
+        <td><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Radial - Rectangular </font></td>
+      </tr>
+    </table>
+    <br>
+  </li>
+  <li><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">UseSysColors: 
+    Boolean</font></b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><br>
+    Determines where the control looks for the gradient colors. </font><br>
+  </li>
+</ul>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif"><b><a NAME="METHODS"></a><br>
+  <font SIZE="4">KEY METHODS</font></b></font></p>
+<ul>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>procedure 
+    BeginUpdate<br>
+    </b>Suspends screen repainting.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>procedure 
+    EndUpdate<br>
+    </b>Re-enables screen repainting.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>procedure 
+    InvalidatePattern<br>
+    </b>Force the control to regenerate the gradient pattern. This method is useful 
+    when you are using custom gradient and want to change the pattern to a new 
+    one without changing the other properties of the control.<br>
+    <br>
+    </font></li>
+  <li><b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">function 
+    CopyPatternTo(Bitmap: TBitmap): Boolean</font></b><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><br>
+    Copies the gradient pattern in to the specified bitmap. If the pattern is 
+    not available, the function returns False.<br>
+    </font></li>
+</ul>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b><a NAME="EVENTS"></a></b></font><font FACE="Verdana, Arial, Helvetica, sans-serif"><b><br>
+  <font SIZE="4">KEY EVENTS</font></b></font></p>
+<ul>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>OnMouseEnter: TNotifyEvent<br>
+    </b>Occurs when the mouse pointer moves over the control. <b><br>
+    <br>
+    </b></font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>OnMouseLeave: TNotifyEvent<br>
+    </b>Occurs when the mouse pointer moves off from over the control. <b><br>
+    <br>
+  </b></font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>  OnCustom: 
+      TCustomGradientEvent<br>
+    TCustomGradientEvent = procedure(Sender: TObject; const Colors: TGradientColors; 
+    Pattern: TBitmap) of object<br>
+    TGradientColors = array[0..255] of TRGBTriple<br>
+    </b> When <i>Style</i> property is set to <i>gsCustom</i>, control generates 
+      this event to get the gradient pattern. <i>Colors</i> parameter is an array 
+      of array of gradient colors, and pattern is a 24bit-format bitmap. In this 
+      event, your code should define the dimensions of the pattern and set color 
+      of its pixels (for more information, please refer to the components demo). 
+  </font> </li>
+</ul>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif"><b><a NAME="HISTORY"></a><br>
+  <font SIZE="4">HISTORY</font></b></font></p>
+<ul>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.61 (August 11, 2007)<br>
+    </b>- Added <em>gsRadialRect style </em> (Thanks to <a href="mailto:informarco@gmail.com">Marco Bianchini</a>).<br>
+  </font><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><br>
+  </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.60 (April 6, 2006)<br>
+  </b>-  Added <em>BorderWidth</em> and <em>BorderColor</em> properties (Thanks to <a HREF="mailto:TkachenkoVV@mail.ru">Tkachenko Vadim</a>).<br>
+- Added <em>OnMouseEnter</em> and <em>OnMouseLeave</em> events (Thanks to <a HREF="mailto:TkachenkoVV@mail.ru">Tkachenko Vadim</a>).<br>
+- The code of radial gradient styles were optimized (Thanks to <a HREF="mailto:TkachenkoVV@mail.ru">Tkachenko Vadim</a>).<br>
+  </font><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><br>
+  </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.52.2 (July 
+      27, 2004)<br>
+    </b>- The following styles exchanged:</font> 
+    <ul>
+      <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Linear Horizontal 
+        / Linear Vertical </font></li>
+      <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Linear Forward 
+        Diagonal / Linear Backward Diagonal</font></li>
+      <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">Reflected 
+          Forward Diagonal / Reflected Backward Diagonal<br>
+        <br>
+        </font></li>
+    </ul>
+  </li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.52.1 (June 
+    18, 2004)<br>
+    </b>- The compiler error on Delphi 3 fixed.<br>
+    <br>
+    </font><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.52 
+    (June 17, 2004)<br>
+    </b>- The new property <i>UseSysColors</i> added (Thanks to <a HREF="mailto:peter.schrooders@bct.nl">Peter 
+    Schrooders</a>).<br>
+    - The new method <i>CopyPatternTo</i> added.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.51 (August 
+    15, 2003)<br>
+    </b>- The code of radial gradient styles were optimized (Thanks to <a HREF="mailto:kiwus@onlinehome.de">Wolfgang 
+    Kiwus</a>).<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.50 (February 
+    3, 2001)<br>
+    </b>- In this version, the drawing speed increased again.<br>
+    - Some new gradient styles added.<br>
+    - Now, the control supports custom gradient style, and as the result, the 
+    event <i>OnCustom</i> added.<br>
+    - Shifting and Rotating operations of the gradient colors and the related 
+    properties <i>Shift</i> and <i>Rotation</i> added.<br>
+    - New methods <i>BeginUpdate</i>, <i>EndUpdate</i>, and <i>InvalidatePattern</i> 
+    added.<br>
+    - The control does not support 16bit platform anymore.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>2.00 (December 
+    29, 2001)<br>
+    </b>- The drawing speed increased dramatically.<br>
+    - New gradient fill styles added and the name of older styles changed.<br>
+    <br>
+    </font></li>
+  <li><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2"><b>1.00 (September 
+    8, 2000)<br>
+    </b> - Initial release.</font></li>
+</ul>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif"><b><a NAME="LICENSE"></a><br>
+  <font SIZE="4">LICENSE</font></b></font></p>
+<blockquote> 
+  <p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">TGradient component 
+    is freeware. You may copy component's files AS LONG AS YOU COPY ALL OF THEM. 
+    If you want to change the source code in order to improve the component's 
+    features, performance, etc. please send me the new source code so that I can 
+    have a look at it. The changed source code should contain descriptions what 
+    you have changed, and of course your name. The only thing you MAY NOT CHANGE 
+    is the ORIGINAL COPYRIGHT INFORMATION. </font></p>
+</blockquote>
+<p><font FACE="Verdana, Arial, Helvetica, sans-serif"><b><a NAME="DISCLAIMER"></a><br>
+  </b> <b> <font SIZE="4">DISCLAIMER</font></b></font></p>
+<blockquote> 
+  <p><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="2">TGradient is 
+    provided &quot;AS IS&quot; without any warranty of any kind, either express 
+    or implied. The entire risk as to the quality and performance of the software 
+    is with you. The author is NOT liable for any DAMAGES resulting from the use 
+    and misuse of the component, especially he is NOT liable for DAMAGES that 
+    were caused BY ANY VERSION WHICH HAS NOT BEEN PROGRAMMED BY THE AUTHOR HIMSELF.</font></p>
+</blockquote>
+<p><br>
+</p>
+<table WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+  <tr> 
+    <td WIDTH="100%"> 
+      <hr NOSHADE>
+    </td>
+    <td NOWRAP><font FACE="Verdana, Arial, Helvetica, sans-serif" SIZE="1"><sup>&nbsp;END 
+      OF DOCUMENT</sup></font></td>
+  </tr>
+</table>
+</body>
+</html>
